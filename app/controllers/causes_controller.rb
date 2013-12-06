@@ -7,7 +7,8 @@ class CausesController < ApplicationController
   
   def index
     @causes = Cause.all
-    render :json => @causes
+    # render :json => @causes
+    render :index
   end
   
 end
