@@ -1,0 +1,50 @@
+class ChimesController < ApplicationController
+
+  def new
+    
+  end
+  
+  def create
+    @chime = Chime.new(params[:chime])
+    # @chime.user_id = current_user.id
+    if @chime.save!
+      render :json => @chime
+    else
+      render :json => @chime.errors.full_messages
+    end
+  end
+  
+  # def edit
+  #   
+  # end
+  # 
+  # def update
+  #     @chime = Chime.find(params[:id])
+  #     
+  #     if @chime.update_attributes(params[:chime])
+  #         render :json => @chime.to_json
+  #     else 
+  #         render :json => @chime.errors.full_messages, :status => 304
+  #     end      
+  # end
+  # 
+  # def destroy
+  #   chime = Chime.find(params[:id])
+  #   chime.destroy
+  #   head :ok
+  # end
+  
+  def show
+    chime = Chime.find(params[:id])
+    render :json => chime
+  end
+  
+  def index
+    # find just chimes associated with this cause
+    puts params
+    render :json => Chime.where(cause_id: params[:cause_id])
+  end
+  
+  
+end
+
