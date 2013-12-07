@@ -6,7 +6,7 @@ class ChimesController < ApplicationController
   
   def create
     @chime = Chime.new(params[:chime])
-    # @chime.user_id = current_user.id
+    @chime.user_id = current_user.id
     if @chime.save!
       render :json => @chime
     else
@@ -36,13 +36,11 @@ class ChimesController < ApplicationController
   
   def show
     chime = Chime.find(params[:id])
-    render :json => chime
+    render :json => chime, :include => [:user, :resonates]
   end
   
   def index
-    # find just chimes associated with this cause
-    puts params
-    render :json => Chime.where(cause_id: params[:cause_id])
+    render :json => Chime.where(cause_id: params[:cause_id]), :include => [:user, :resonates]
   end
   
   
