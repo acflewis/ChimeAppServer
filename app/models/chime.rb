@@ -6,5 +6,9 @@ class Chime < ActiveRecord::Base
   belongs_to :cause
   
   has_many :resonates
+  
+  def as_json(options = {})
+     super options.merge(:include => :cause)
+   end
 
 end

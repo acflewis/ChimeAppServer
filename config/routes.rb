@@ -8,6 +8,7 @@ ChimeApp::Application.routes.draw do
       resources :resonates, only: [:new, :create, :destroy]
     end
   end
+  resources :users, :only => [:show]
   
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
