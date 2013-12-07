@@ -4,4 +4,4 @@ chimes = Chime.create([{cause_id: 1, reason: "pursue my dreams", user_id: 1}, {c
 
 users = User.create([{uid: 1, provider: "twitter", name: "Anna"}, {uid: 2, provider: "twitter", name: "Maria"}])
 
-resonates = Resonate.create([{user_id: 1, chime_id: 2}, {user_id: 2, chime_id: 2}, {user_id: 1, chime_id: 1}])
+# resonates = Resonate.create([{user_id: 1, chime_id: 2}, {user_id: 2, chime_id: 2}, {user_id: 1, chime_id: 1}])
