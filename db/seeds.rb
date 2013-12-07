@@ -2,7 +2,7 @@ causes = Cause.create([
   {title: "Women in Tech", category: "Education", chime_reason: "because 28% of the tech work force does not cut it ", link: "http://chimehack.challengepost.com/" }, 
   {title: "An HIV-Free Generation", category: "Health", chime_reason: "because I am so grateful for my health", link: "http://www.chimeforchange.org/projects/support-hiv-free-generation?pillar=education" }, 
   {title: "A US Female President", category: "Justice", chime_reason: "because I believe in an equal world", link: "http://hillaryclinton.com/" }, 
-  {title: "Open Schools for Pakistan", category: "Education", chime_reason: "because every girl should have access to a brighter future", link: "http://www.chimeforchange.org/projects/open-schools-brave-girls-pakistan?pillar=education"}
+  {title: "Opening Schools in Pakistan", category: "Education", chime_reason: "because every girl should have access to a brighter future", link: "http://www.chimeforchange.org/projects/open-schools-brave-girls-pakistan?pillar=education"}
   ])
  
  

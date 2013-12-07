@@ -8,7 +8,7 @@ class Chime < ActiveRecord::Base
   has_many :resonates
   
   def as_json(options = {})
-     super options.merge(:include => :cause)
+     super options.merge(:include => [:cause, :user])
    end
 
 end
