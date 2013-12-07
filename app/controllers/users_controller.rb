@@ -9,6 +9,8 @@ class UsersController < ApplicationController
         :chimes => @chimes,
         :user => current_user
      }
+   else
+     render :json => "Please Login"
    end
   end
   
