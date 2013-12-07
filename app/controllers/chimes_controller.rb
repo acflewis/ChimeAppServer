@@ -36,11 +36,11 @@ class ChimesController < ApplicationController
   
   def show
     chime = Chime.find(params[:id])
-    render :json => chime, :include => [:user, :resonates]
+    render :json => chime
   end
   
   def index
-    render :json => Chime.where(cause_id: params[:cause_id]), :include => [:user, :resonates]
+    render :json => Chime.where(cause_id: params[:cause_id])
   end
   
   
