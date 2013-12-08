@@ -20,7 +20,7 @@ users = User.create([
   ])
   
 chimes = Chime.create([
-  {cause_id: 1, reason: "because I want to build the next Twitter", user_id: 1}, 
+  {cause_id: 1, reason: "because I want to build the next Twitter", user_id: 5}, 
   {cause_id: 1, reason: "only 2% of open source developers are women", user_id: 6}, 
   {cause_id: 1, reason: "I want to be CEO", user_id: 10}, 
   {cause_id: 1, reason: "Tech is the future", user_id: 7}, 
