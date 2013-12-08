@@ -7,7 +7,7 @@ causes = Cause.create([
  
  
 users = User.create([
-  {uid: 1, provider: "twitter", name: "Beyonce", clout: 10, image_url: "http://ad1727ca3099db9fbbba-cf8ca2add790fd391ac40dfaa535d47b.r19.cf1.rackcd…iles/styles/curator_350x270/public/Beyonce2_0_1368418829.png?itok=7HbsGo12"}, 
+  {uid: 1, provider: "twitter", name: "Beyonce", clout: 30, image_url: "http://ad1727ca3099db9fbbba-cf8ca2add790fd391ac40dfaa535d47b.r19.cf1.rackcd…iles/styles/curator_350x270/public/Beyonce2_0_1368418829.png?itok=7HbsGo12"}, 
   {uid: 2, provider: "twitter", name: "Alicia", clout: 6, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/alicia%20final%20crop.png"},
   {uid: 3, provider: "twitter", name: "John", clout: 4, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/john.png" }, 
   {uid: 4, provider: "twitter", name: "Julia", clout: 3, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/JuliaRoberts_crop_C_0.jpg"}, 
@@ -20,7 +20,7 @@ users = User.create([
   ])
   
 chimes = Chime.create([
-  {cause_id: 1, reason: "because I want to build the next Twitter", user_id: 5}, 
+  {cause_id: 1, reason: "because I want to build the next Twitter", user_id: 1}, 
   {cause_id: 1, reason: "only 2% of open source developers are women", user_id: 6}, 
   {cause_id: 1, reason: "I want to be CEO", user_id: 10}, 
   {cause_id: 1, reason: "Tech is the future", user_id: 7}, 
