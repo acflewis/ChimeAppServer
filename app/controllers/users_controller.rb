@@ -10,7 +10,13 @@ class UsersController < ApplicationController
         :user => current_user
      }
    else
-     render :json => "Please Login"
+     @user = User.find(1)
+     @chimes = Chime.find_by_user_id(1) 
+     render :json => {
+         :chimes => @chimes,
+         :user => @user
+      }
+     # render :json => "Please Login"
    end
   end
   
