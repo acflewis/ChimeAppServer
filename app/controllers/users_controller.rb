@@ -11,7 +11,7 @@ class UsersController < ApplicationController
      }
    else
      @user = User.find(1)
-     @chimes = Chime.find_by_user_id(1) 
+     @chimes = Chime.find_by_user_id(2) 
      render :json => {
          :chimes => @chimes,
          :user => @user
