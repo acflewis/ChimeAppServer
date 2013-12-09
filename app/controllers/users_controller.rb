@@ -4,14 +4,14 @@ class UsersController < ApplicationController
     if current_user
     
     @user = current_user
-    @chimes = Chime.find_by_user_id(current_user.id) 
+    @chimes = Chime.find_all_by_user_id(current_user.id) 
     render :json => {
         :chimes => @chimes,
         :user => current_user
      }
    else
-     @user = User.find(1)
-     @chimes = Chime.find_by_user_id(2) 
+     @user = User.find(2)
+     @chimes = Chime.find_all_by_user_id(2) 
      render :json => {
          :chimes => @chimes,
          :user => @user
