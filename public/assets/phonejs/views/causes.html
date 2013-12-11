@@ -1,0 +1,17 @@
+<div data-options="dxView : { name: 'causes', title: 'Daily Chime' } " >
+    <div data-options="dxContent : {targetPlaceholder: 'content' } " >
+		<div class="gallery" data-bind="dxGallery: { showNavButtons: true, dataSource: dataSource }">
+        	<div class="tile" data-options="dxTemplate: { name: 'item' }" >
+        		<div class='item-container cause-tile' data-bind="style {borderColor: calculateTheme(category) }">
+					<div class="category-display" data-bind="style: {backgroundColor: calculateTheme(category) }">
+						<span data-bind="text: category"><br><br></span>
+					</div>
+				    <p><br><br>I chime for <span data-bind="text: title"> </span></p><br/>
+            		<div class='chime-button'>
+				    	<div id="buttonContainer" data-bind="style: { background: 'transparent', width: '100%', height: '100%', border: 'none'}, dxButton: { text: '', clickAction: '#share/{id}/{title}' }"></div>
+				  	</div>
+		    	</div>
+			</div>
+		</div>
+    </div>
+</div>

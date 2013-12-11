@@ -1,0 +1,81 @@
+﻿/* Put css styles for home view here */
+
+.home-view {
+	padding: 5px;
+
+    background: url(assets/bg.png) no-repeat center center fixed;
+  	background-size: cover;
+  	overflow: scroll;
+}
+
+.home-view p {
+	padding: 5px;
+}
+
+.profile_picture
+{
+	height: 80px;
+	width: 80px;
+	border-width: 2px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: white;
+	margin: 14px 0 0 5px;
+	margin: 0 auto;
+}
+
+.user_name
+{
+	font-family: futura;
+	font-size: default;
+	color: black;
+}
+
+.clout_score
+{
+	font-family: futura;
+	font-size: default;
+	color: black;
+}
+
+.user_info
+{
+	text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chime_title
+{
+	font-weight: 300;
+	font-style: italic;
+	font-family: futura;
+}
+
+li p .chime_description {
+	font-weight: 100;
+   font-family: futura;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.chime-item {
+  width: 300;
+}
+
+.chimes-ul {
+  width: 300;
+  color: red;
+}

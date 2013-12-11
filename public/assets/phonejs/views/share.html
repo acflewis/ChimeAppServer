@@ -1,0 +1,175 @@
+<style type="text/css">
+.overlayContents{
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  height: 150px;
+}
+.dx-theme-ios .overlayContents{
+  border-color:#43628D;
+  background-color:#F7F7F7;
+}
+.dx-theme-android .overlayContents{
+  border-color:#FFFFFF;
+  background-color:#5F5F5F;
+}
+.dx-theme-win8 .overlayContents{
+  border-color: #E4E4E4;
+  background-color:#333333;
+}
+
+.paypal-button {
+  padding: 4px 19px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 13px;
+  font-family: "Arial", bold, italic;
+  font-weight: bold;
+  font-style: italic;
+  border: 1px solid #ffa823;
+  color: #0E3168;
+  background: #ffa823;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  cursor: pointer;
+  z-index: 0;
+}
+
+.twitter-share-button {
+  background: transparent url(https://abs.twimg.com/a/1386278595/t1/img/bird-topbar-blue.png) no-repeat 10px;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+.facebook {
+    background-image: url('views/assets/Facebook.png');
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+}
+
+.email {
+    background-image: url('views/assets/email.jpg');
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+}
+
+
+.share-tile {
+  background-color: white;
+  font-family: "futura";
+  color: gray;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10px;
+  height: 80%;
+  border: 5px solid gray;
+}
+
+.reason {
+  background-color: white;
+  font-family: "futura";
+  color: gray;
+  width: 65%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10px;
+  height: 70%;
+  border: 5px solid #fcbb45;
+}
+
+.share {
+  background-color: white;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10px;
+  width: 140px;
+  border: 2px solid gray;
+}
+
+.reason-box {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.button-reason {
+  margin-left:auto;
+  margin-right:auto;
+  width: 40px;
+}
+
+.share-buttons {
+  margin-bottom: 10px;
+}
+
+.hide-button {
+  position: absolute; top: 10px; right: 10px;
+}
+
+.center-me {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.our-overlay {
+  width: 50%;
+}
+
+.background-gallery {
+  background: url(views/assets/bg.png) no-repeat center center fixed;
+  background-size: cover;
+  overflow: scroll;
+}
+
+
+</style>
+
+
+
+<div  data-options="dxView : { name: 'share', title: 'Share your Chime!' } " >
+
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+      <div class="item-container share-tile background-gallery">
+      <div class="reason">
+
+          <div style="margin:10px;text-align:center"><h2>I chime for <span data-bind="text: cause"/> because</h2></div>
+
+        <div class="reason-box">
+          <center><TEXTAREA NAME="Address" ROWS=3 COLS=30 data-bind="value: reason">
+        </TEXTAREA>
+      </center>
+        <br>
+        <div class="button-reason">
+        <div id="buttonContainer" data-bind="dxButton: { text: '', clickAction: showOverlay, iconSrc: 'views/assets/Comment-1@2x.png' }"></div>
+      </div>
+      </div>
+      </div>
+      <br/>
+
+
+    <div id="overlayContainer" data-bind="dxOverlay: { visible: overlayVisible, width:'200px' }">
+    <div class="overlayContents">
+        <div class="button" data-bind="dxButton: { text: 'X', clickAction: '#chimes/{id}/{cause}' }"></div>
+        <img data-bind="attr {src: overlayImg}" />
+        <div class="share">
+           <div style="margin:10px;text-align:center"><h4>Share your chime for more chime points</h4></div>
+          <div class="share-buttons">
+          <a data-bind="attr: {href:'https://twitter.com/intent/tweet?hashtags=IChimeFor&original_referer=https%3A%2F%2Fchimeforchange.org%2Fresources%2Fbuttons&text=' + tweet + '&tw_p=tweetbutton&url=http%3A%2F%2Fchimeforchange.org'}"class="twitter-share-button" data-count="none" sy>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+          <a data-bind="attr: {href:'http://www.facebook.com'}" class="facebook">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a data-bind="attr: {href:'http://www.gmail.com'}" class="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <br>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+</div>

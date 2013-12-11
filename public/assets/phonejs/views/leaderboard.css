@@ -1,0 +1,35 @@
+/* Put css styles for leaderboard here */
+
+.dx-fieldset {
+	min-height: 90px;
+	padding-left: 95px;
+	overflow: scroll;
+}
+
+.dx-field
+{
+  background: url(assets/bg.png) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.dx-field-label p {
+	font-size: 20px;
+	color: red;
+}
+
+.dx-field-label img  {
+	height: 80px;
+	width: 80px;
+	border-width: 2px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: white;
+	margin: 14px 0 0 5px;
+}
+
+.dx-field-value p {
+	text-align: right;
+	font-size: 30px;
+	padding-top: 20px;
+	color: black;
+}

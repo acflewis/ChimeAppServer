@@ -1,0 +1,28 @@
+
+
+<div data-options="dxView : { name: 'chimes', title: 'Chimes'} " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div class="tileView" data-bind="dxTileView: {
+		  dataSource: dataSource,
+		  itemMargin: 20,
+		  baseItemHeight: 230,
+		  baseItemWidth: 180
+		}">
+		    <div class="tile" data-options="dxTemplate:{name:'item'}">
+		    	<div class="user-img">
+		    		<img data-bind="attr: {src: userImg}" style="width:100px; height:100px;"/>
+		    	</div>
+		        <p style="font-size:15px;"><b data-bind="text: reason"></b></p>
+		    	<p style="font-size:10px;">By: <i data-bind="text: user"></i></p>
+		    	<div class="score">
+		    		<img src="views/assets/CcCHighResLogo.png" style="width:20px; height:20px;" />
+		    		Score: <span data-bind="text: chime_score" />
+		    	</div>
+
+		    </div>
+		</div>
+		<div class="donate">
+	    	<a href="https://www.paypal.com"><button type="submit" class="paypal-button large" >Donate Your Daily $</button></a>
+	    </div>
+    </div>
+</div>

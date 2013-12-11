@@ -1,0 +1,21 @@
+﻿<div data-options="dxView : { name: 'profile', title: 'Profile'} " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+      
+      <!-- <div class="user_info" data-bind=data-bind="dxList: { dataSource: dataSource }">
+        <div data-options="dxTemplate:{name:'item'}">  
+            <p class="username"><b data-bind="text: userName"></b></p>
+            <p class="clout_score">Chime Score: <p data-bind="text: chimeScore"></p></p>
+          </div>
+      </div>   -->
+      
+  
+      
+    <ul class="chimes-ul" data-bind="dxList: {
+  dataSource: dataSource
+}">
+      <li class = "chime-item" data-bind="style: {backgroundColor: calculateTheme(category) }" data-options="dxTemplate:{name:'item'}">
+		        <p style="font-size:15px;">I chimed for <b data-bind="text: cause"></b> because <b data-bind="text: reason"></b></p>
+      </li>        
+    </ul>
+
+</div>

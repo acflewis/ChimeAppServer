@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'chimers', title: 'Chimers' } " >
+      <div class="leaderboard" data-options="dxContent : { targetPlaceholder: 'content' } " >
+            <div class="dx-fieldset" data-bind="dxList: {dataSource: chimer}">
+                  <div class="dx-field" data-options="dxTemplate: { name: 'item' }">
+                        <div class="dx-field-label">
+                             <img data-bind="attr: {src: imageUrl}" style="width:100px; height:100px;"/>
+                              <p data-bind="text: name"></p>
+                        </div>
+                        <div class="dx-field-value">
+                        <p data-bind="text: chimeScore"></p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
