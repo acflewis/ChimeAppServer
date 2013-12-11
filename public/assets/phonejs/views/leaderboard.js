@@ -27,7 +27,7 @@ MyApp.chimers = function() {
 	var viewModel = {
         chimer: new DevExpress.data.DataSource({
             load: function(loadOptions) {
-                return $.getJSON('http://chimeapp.herokuapp.com/users');
+                return $.getJSON('/users');
             },
             map: function(item) {
                 return {

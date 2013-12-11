@@ -15,7 +15,7 @@
               {
                 title: "My Profile",
                 action: "#profile",
-                icon: "profile"
+                icon: "home"
               },
               {
                 title: "Causes",
@@ -33,7 +33,7 @@
         MyApp.app.router.register("share/:id/:cause", { view: "share", id: undefined, cause: undefined });
         MyApp.app.router.register("chimes/:id/:cause", { view: "chimes", id: undefined, cause: undefined });
 
-        MyApp.app.router.register(":view", { view: "causes" });
+        MyApp.app.router.register(":view", { view: "profile" });
 
         MyApp.app.navigate();
     });

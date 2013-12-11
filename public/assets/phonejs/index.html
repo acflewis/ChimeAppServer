@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>MyApp</title>
-
+        
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -10,67 +10,73 @@
 
     <!-- This script is added by PhoneGap build -->
     <!-- <script type="text/javascript" src="cordova.js"></script> -->
-
+    
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/js/jquery-1.10.2.min.js"></script>
     <![endif]-->
     <!--[if gte IE 9]><!-->
-    <script type="text/javascript" src="../app/assets/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/js/jquery-2.0.3.min.js"></script>
     <!--<![endif]-->
+    
+    <script type="text/javascript" src="/assets/phonejs/js/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/js/globalize.min.js"></script>
 
-    <script type="text/javascript" src="../app/assets/js/knockout-3.0.0.js"></script>
-    <script type="text/javascript" src="../app/assets/js/globalize.min.js"></script>
-
-    <script type="text/javascript" src="../app/assets/js/dx.phonejs.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/js/dx.phonejs.js"></script>
     <!--
-    <script type="text/javascript" src="js/localization/dx.phonejs.ja.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/js/dx.phonejs.js"></script>
     -->
-
-    <link rel="stylesheet" type="text/css" href="../app/assets/css/dx.common.css" />
-    <link rel="stylesheet" type="text/css" href="../app/assets/css/dx.ios.default.css" />
-    <link rel="stylesheet" type="text/css" href="../app/assets/css/dx.android.holo-dark.css" />
-    <!--link rel="stylesheet" type="text/css" href="css/dx.android.holo-light.css" /-->
-    <link rel="stylesheet" type="text/css" href="../app/assets/css/dx.win8.black.css" />
-    <!--link rel="stylesheet" type="text/css" href="css/dx.win8.white.css" /-->
-    <link rel="stylesheet" type="text/css" href="../app/assets/css/dx.tizen.white.css" />
-    <!--link rel="stylesheet" type="text/css" href="css/dx.tizen.black.css" /-->
-    <link rel="stylesheet" type="text/css" href="../app/assets/css/dx.generic.light.css" />
+        
+    <!--     
+    <script type="text/javascript" src="/assets/phonejs/js/localization/dx.phonejs.ja.js"></script>
+    -->
+    
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.ios.default.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.android.holo-dark.css" />
+    <!--link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.android.holo-light.css" /-->
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.win8.black.css" />
+    <!--link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.win8.white.css" /-->
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.tizen.white.css" />
+    <!--link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.tizen.black.css" /-->
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/css/dx.generic.light.css" />
 
     <!-- App -->
-    <link rel="stylesheet" type="text/css" href="../app/assets/index.css" />
-    <script type="text/javascript" src="../app/assets/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/index.css" />
+    <script type="text/javascript" src="/assets/phonejs/index.js"></script>    
 
     <!-- Layouts -->
-    <script type="text/javascript" src="../app/assets/layouts/Navbar/NavbarLayout.js"></script>
-    <link rel="stylesheet" type="text/css" href="../app/assets/layouts/Navbar/NavbarLayout.css" />
-    <link rel="dx-template" type="text/html" href="../app/assets/layouts/Navbar/NavbarLayout.html"/>
+    <script type="text/javascript" src="/assets/phonejs/layouts/Navbar/NavbarLayout.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/layouts/Navbar/NavbarLayout.css" />
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/layouts/Navbar/NavbarLayout.html"/>
 
-    <script type="text/javascript" src="../app/assets/layouts/Pivot/PivotLayout.js"></script>
-    <link rel="stylesheet" type="text/css" href="../app/assets/layouts/Pivot/PivotLayout.css" />
-    <link rel="dx-template" type="text/html" href="../app/assets/layouts/Pivot/PivotLayout.html"/>
+    <script type="text/javascript" src="/assets/phonejs/layouts/Pivot/PivotLayout.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/layouts/Pivot/PivotLayout.css" />
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/layouts/Pivot/PivotLayout.html"/>
 
     <!-- App views -->
-    <link rel="stylesheet" type="text/css" href="../app/assets/views/home.css" />
-    <link rel="stylesheet" type="text/css" href="../app/assets/views/chimes.css" />
-    <link rel="stylesheet" type="text/css" href="../app/assets/views/causes.css" />
-    <link rel="stylesheet" type="text/css" href="../app/assets/views/leaderboard.css" />
+   
+    
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/views/profile.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/views/chimes.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/views/causes.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/phonejs/views/leaderboard.css" />
 
-    <script type="text/javascript" src="../app/assets/views/home.js"></script>
-    <script type="text/javascript" src="../app/assets/views/causes.js"></script>
-    <script type="text/javascript" src="../app/assets/views/chimes.js"></script>
-    <script type="text/javascript" src="../app/assets/views/leaderboard.js"></script>
-    <script type="text/javascript" src="../app/assets/views/login.js"></script>
-    <script type="text/javascript" src="../app/assets/views/share.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/views/profile.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/views/causes.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/views/chimes.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/views/leaderboard.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/views/login.js"></script>
+    <script type="text/javascript" src="/assets/phonejs/views/share.js"></script>
 
-    <link rel="dx-template" type="text/html" href="../app/assets/views/home.html"/>
-    <link rel="dx-template" type="text/html" href="../app/assets/views/causes.html"/>
-    <link rel="dx-template" type="text/html" href="../app/assets/views/chimes.html"/>
-    <link rel="dx-template" type="text/html" href="../app/assets/views/share.html"/>
-    <link rel="dx-template" type="text/html" href="../app/assets/views/login.html"/>
-    <link rel="dx-template" type="text/html" href="../app/assets/views/leaderboard.html"/>
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/views/profile.html"/>
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/views/causes.html"/>
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/views/chimes.html"/>
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/views/share.html"/>
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/views/login.html"/>
+    <link rel="dx-template" type="text/html" href="/assets/phonejs/views/leaderboard.html"/>
 
-    <script src="../app/assets/js/paypal-button.min.js?merchant=123" data-button="donate"></script>
-
+    <script src="/assets/phonejs/js/paypal-button.min.js?merchant=123" data-button="donate"></script>
+    
 </head>
 <body>
     <div class="dx-viewport"></div>

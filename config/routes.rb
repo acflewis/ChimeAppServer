@@ -1,5 +1,6 @@
 ChimeApp::Application.routes.draw do
-  get "static_pages/index"
+  # get "static_pages/index"
+  # get "causes/index"
 
   # resources :users, :only => [:create, :new, :show]
  # resource :session, :only => [:create, :destroy, :new] 
