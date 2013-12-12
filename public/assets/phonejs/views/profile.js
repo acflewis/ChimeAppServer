@@ -5,7 +5,7 @@
         dataSource: new DevExpress.data.DataSource({
             load: function(loadOptions) {
               
-                return $.getJSON('/users/2');
+                return $.getJSON('/users/' + params.id);
             },
             
             map: function(item) {

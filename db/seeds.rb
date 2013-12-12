@@ -7,23 +7,23 @@ causes = Cause.create([
  
  
 users = User.create([
-  {uid: 1, provider: "twitter", name: "Beyonce", clout: 30, image_url: "http://ad1727ca3099db9fbbba-cf8ca2add790fd391ac40dfaa535d47b.r19.cf1.rackcd…iles/styles/curator_350x270/public/Beyonce2_0_1368418829.png?itok=7HbsGo12"}, 
-  {uid: 2, provider: "twitter", name: "Alicia", clout: 6, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/alicia%20final%20crop.png"},
-  {uid: 3, provider: "twitter", name: "John", clout: 4, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/john.png" }, 
-  {uid: 4, provider: "twitter", name: "Julia", clout: 3, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/JuliaRoberts_crop_C_0.jpg"}, 
-  {uid: 5, provider: "twitter", name: "Julia", clout: 3, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/JuliaRoberts_crop_C_0.jpg"}, 
-  {uid: 6, provider: "twitter", name: "Haley", clout: 2, image_url: "http://www.hdwallpapersinn.com/wp-content/uploads/2013/03/facebook-profile-photo-for-girls-1101.jpg"},
-  {uid: 7, provider: "twitter", name: "Gucci", clout: 5, image_url: "https://lh6.googleusercontent.com/-oMVBz4hBLcs/UpHwb8kCPqI/AAAAAAAAaDI/O5_eBBzKh3M/s377-no/Gucci_Holiday_Google%252B_Icon_270x270.jpg"}, 
-  {uid: 8, provider: "twitter", name: "Cara", clout: 3, image_url: "http://www.carascravings.com/wp-content/uploads/2012/07/profile-photo-220x183.jpg"}, 
-  {uid: 9, provider: "twitter", name: "Alaina", clout: 6, image_url: "http://photos1.meetupstatic.com/photos/member/d/d/3/8/member_39656632.jpeg"}, 
-  {uid: 10, provider: "twitter", name: "Kamilla", clout: 10, image_url: "https://scontent-b.xx.fbcdn.net/hphotos-prn1/63963_1777842285422_4898000_n.jpg"}
+  {uid: 1, provider: "twitter", name: "Beyonce", clout: 300, image_url: "http://wpc.4d27.edgecastcdn.net/004D27/2013/Events/BeyonceChimeForChangeGucci/Beyonce++Chime+For+Change+Gucci+2.jpg"}, 
+  {uid: 2, provider: "twitter", name: "Alicia", clout: 60, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/alicia%20final%20crop.png"},
+  {uid: 3, provider: "twitter", name: "John", clout: 40, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/john.png" }, 
+  {uid: 4, provider: "twitter", name: "Julia", clout: 30, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/JuliaRoberts_crop_C_0.jpg"}, 
+  {uid: 5, provider: "twitter", name: "Julia", clout: 30, image_url: "http://www.catapult.org/sites/default/files/styles/curator_350x270/public/JuliaRoberts_crop_C_0.jpg"}, 
+  {uid: 6, provider: "twitter", name: "Haley", clout: 20, image_url: "http://www.hdwallpapersinn.com/wp-content/uploads/2013/03/facebook-profile-photo-for-girls-1101.jpg"},
+  {uid: 7, provider: "twitter", name: "Gucci", clout: 50, image_url: "https://lh6.googleusercontent.com/-oMVBz4hBLcs/UpHwb8kCPqI/AAAAAAAAaDI/O5_eBBzKh3M/s377-no/Gucci_Holiday_Google%252B_Icon_270x270.jpg"}, 
+  {uid: 8, provider: "twitter", name: "Cara", clout: 30, image_url: "http://www.carascravings.com/wp-content/uploads/2012/07/profile-photo-220x183.jpg"}, 
+  {uid: 9, provider: "twitter", name: "Alaina", clout: 60, image_url: "http://photos1.meetupstatic.com/photos/member/d/d/3/8/member_39656632.jpeg"}, 
+  {uid: 10, provider: "twitter", name: "Kamilla", clout: 100, image_url: "https://scontent-b.xx.fbcdn.net/hphotos-prn1/63963_1777842285422_4898000_n.jpg"}
   ])
   
 chimes = Chime.create([
   {cause_id: 1, reason: "because I want to build the next Twitter", user_id: 5}, 
   {cause_id: 1, reason: "only 2% of open source developers are women", user_id: 6}, 
   {cause_id: 1, reason: "I want to be CEO", user_id: 10}, 
-  {cause_id: 1, reason: "Tech is the future", user_id: 7}, 
+  {cause_id: 1, reason: "tech is the future", user_id: 7}, 
   {cause_id: 2, reason: "I want my children to live in a healthier world", user_id: 1}, 
   {cause_id: 2, reason: "health needs to be fought for and protected", user_id: 3}, 
   {cause_id: 2, reason: "women account for 1 in 5 diagnoses and deaths due to Aids in the US", user_id: 4}, 

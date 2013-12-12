@@ -5,8 +5,10 @@ class ChimesController < ApplicationController
   end
   
   def create
-    @chime = Chime.new(params[:chime])
-    @chime.user_id = current_user.id
+    @chime = Chime.new()
+    @chime.reason = params[:reason]
+    @chime.cause_id = params[:cause_id]
+    @chime.user_id = 2
     if @chime.save!
       render :json => @chime
     else
@@ -40,7 +42,7 @@ class ChimesController < ApplicationController
   end
   
   def index
-    render :json => Chime.where(cause_id: params[:cause_id])
+    render :json => Chime.where(cause_id: params[:cause_id]).reverse_order
   end
   
   

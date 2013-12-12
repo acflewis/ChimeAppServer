@@ -14,6 +14,7 @@ ChimeApp::Application.routes.draw do
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
   
+  
   match "*path" => "api#xss_options_request", :constraints => {:method => "OPTIONS"}
   
 end
