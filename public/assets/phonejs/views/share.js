@@ -7,7 +7,7 @@ MyApp.share = function(params) {
 
         tweet: "I chime for " + params.cause,
 
-        overlayImg: "views/assets/ChimeOverlay.png"
+        overlayImg: "views/assets/ChimeOverlay.PNG"
     };
 
     return viewModel;
