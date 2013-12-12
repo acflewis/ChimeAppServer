@@ -34,7 +34,7 @@ chimes = Chime.create([
   {cause_id: 3, reason: "it is time for a woman to take office", user_id: 2}, 
   {cause_id: 3, reason: "I believe in an equal world", user_id: 3}, 
   {cause_id: 4, reason: "every girl deserves a chance", user_id: 2}, 
-  {cause_id: 4, reason: "the adult literacy rate is only 55%", user_id: 10}, 
+  {cause_id: 4, reason: "the adult literacy rate is only 55%", user_id: 9}, 
   {cause_id: 4, reason: "these girls remind me of my daughter, Blue Ivy", user_id: 1}, 
   {cause_id: 4, reason: "reading opens doors", user_id: 7}  
   ])
