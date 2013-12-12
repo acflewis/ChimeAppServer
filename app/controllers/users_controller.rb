@@ -7,8 +7,8 @@ class UsersController < ApplicationController
     @chimes = Chime.find_all_by_user_id(current_user.id) 
     render :json => @chimes
    else
-     @user = User.find(2)
-     @chimes = Chime.find_all_by_user_id(2) 
+     @user = User.find(9)
+     @chimes = Chime.find_all_by_user_id(9) 
      render :json => @chimes
      # render :json => "Please Login"
    end

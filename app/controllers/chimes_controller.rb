@@ -8,7 +8,7 @@ class ChimesController < ApplicationController
     @chime = Chime.new()
     @chime.reason = params[:reason]
     @chime.cause_id = params[:cause_id]
-    @chime.user_id = 2
+    @chime.user_id = 9
     if @chime.save!
       render :json => @chime
     else
