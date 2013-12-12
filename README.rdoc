@@ -1,1 +1,5 @@
-= Welcome to Chime for Change, Resonate Team
+= Welcome to The Daily Chime -- Team Resonate's pitch at #ChimeHack
+
+The App is designed as a digital campaign platform for women’s issues -- it turns social media buzz into action around issues that affect women and girls.
+
+The app is hosted at http://chimeapp.herokuapp.com/assets/phonejs/index.html -- please be warned that it may load slowly the first time accessed.
